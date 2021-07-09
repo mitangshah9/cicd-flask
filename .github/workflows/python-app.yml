@@ -35,7 +35,7 @@ jobs:
         pip install pytest
         export PYTHONPATH=src
         pytest
-      name: Deploy to Heroku
+    - name: Deploy to Heroku
       env:
         HEROKU_API_TOKEN: ${{ secrets.HEROKU_API_TOKEN }}
         HEROKU_APP_NAME: ${{ secrets.HEROKU_APP_NAME }}
